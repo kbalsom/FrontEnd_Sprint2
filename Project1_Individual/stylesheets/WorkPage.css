@@ -1,0 +1,43 @@
+.workpage {
+  background-color: #f8e7e7;
+  color: #724060;
+  text-align: center;
+}
+
+.workpage #image {
+  width: 40vh;
+  height: 60vh;
+}
+
+.workpage #headercontainer {
+  background-image: url("../images/headerimage.jpg");
+  width: 100%;
+  height: 40vh;
+  color: #f8e7e7;
+}
+
+.workpage #headercontent {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  right: 40%;
+  left: 40%;
+}
+
+.workpage #headercontainer p {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.workpage #intro {
+  width: 70%;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 50%;
+  left: 15%;
+}
+
+.workpage #github {
+  margin-bottom: 100px;
+}

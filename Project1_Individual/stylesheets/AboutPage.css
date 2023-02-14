@@ -1,0 +1,36 @@
+.aboutpage {
+  background-color: #f8e7e7;
+  text-align: center;
+}
+
+.aboutpage #image {
+  width: 40vh;
+  height: 60vh;
+}
+
+.aboutpage #headercontainer {
+  background-image: url("../images/headerimage.jpg");
+  width: 100%;
+  height: 40vh;
+  color: #f8e7e7;
+}
+
+.aboutpage #headercontent {
+  position: absolute;
+  top: 11%;
+  bottom: 20%;
+}
+
+.aboutpage #headercontainer p {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.aboutpage #aboutcontainer {
+  margin: 100px;
+  color: #724060;
+}
+
+.aboutpage #aboutcontainer p {
+  margin-top: 100px;
+}

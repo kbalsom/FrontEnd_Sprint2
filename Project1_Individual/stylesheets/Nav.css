@@ -1,0 +1,33 @@
+.nav {
+  width: 100%;
+  background-color: #724060;
+  color: #f8e7e7;
+  height: 50px;
+  font-size: 0.5em;
+}
+
+.nav #flexcontainer {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.nav #navlinks {
+  justify-content: flex-end;
+  align-content: center;
+  display: flex;
+  width: 50%;
+}
+
+.nav #home h1 {
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f8e7e7;
+  margin-left: 10px;
+  margin-right: 10px;
+}
