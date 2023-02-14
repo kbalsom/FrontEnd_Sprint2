@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap");
+
+.userinfo {
+	font-family: "Poppins", sans-serif;
+
+	font-size: 5pt;
+	max-height: 75px;
+}
+
+.userinfo #username-text {
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(94, 94, 94);
+	padding: 4px 0;
+}
+.userinfo #pronouns-text {
+	color: rgb(151, 151, 151);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 10px;
+	padding: 4px 0;
+}
+.userinfo #bio {
+	max-width: 800px;
+}
+.userinfo #bio-text {
+	color: rgb(151, 151, 151);
+	font-size: 16px;
+	overflow-wrap: break-word;
+	padding: 5px 0;
+}
+
+.userinfo #namepronouns {
+	display: flex;
+	font-weight: 100;
+}

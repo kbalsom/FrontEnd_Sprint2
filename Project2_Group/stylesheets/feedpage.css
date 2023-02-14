@@ -1,0 +1,231 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap");
+
+.feedpage {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: 100%;
+}
+
+.feedpage ::-webkit-scrollbar {
+	border-radius: 0 10px 10px 0;
+	border: 5px solid white;
+	height: 10px;
+	width: 8px;
+}
+
+.feedpage ::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	background: #c2c9d2;
+	border-radius: 10px;
+}
+
+.feedpage .feed {
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-end;
+	width: 100%;
+	max-width: 75vw;
+	background-color: white;
+	height: 100%;
+}
+
+.feedpage #user {
+	border: 1px solid rgb(156, 156, 156);
+	border-radius: 6px;
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	min-height: 120px;
+	max-height: 120px;
+	margin: 10px;
+	overflow-y: auto;
+}
+
+.feedpage #userpicture {
+	margin: 0px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.feedpage #userinfo {
+	display: flex;
+	align-items: center;
+}
+
+.feedpage #newpost-container {
+	border: 1px solid rgb(156, 156, 156);
+	border-radius: 6px 6px 0 0;
+	margin: 0 10px;
+	overflow-y: auto;
+}
+
+.feedpage .gradient-border {
+	align-items: center;
+	background: -webkit-linear-gradient(top left, #63d9a0 0, #9e0de7 95%);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100px;
+	-webkit-border-radius: 6px;
+	margin: 10px;
+}
+
+.feedpage .form-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 99.6%;
+	height: 94px;
+	border-radius: 6px;
+}
+
+.feedpage form {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid white;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 6px;
+}
+
+.feedpage textarea {
+	border: none;
+	height: 100%;
+	width: 100%;
+	padding: 7px 180px 7px 7px;
+	resize: none;
+}
+
+.feedpage textarea:focus-visible {
+	outline: none;
+}
+
+.feedpage button {
+	-webkit-transition: 0.5s;
+	align-self: flex-end;
+	background-image: linear-gradient(
+		to right,
+		#63d9a0 0%,
+		#9e0de7 50%,
+		#63d9a0 100%
+	);
+	background-size: 200% auto;
+	border-radius: 5px;
+	border: none;
+	bottom: 5px;
+	box-shadow: 0px 3px 4px rgb(165, 165, 165);
+	display: block;
+	height: 32px;
+	margin: 10px;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	transition: 0.5s;
+	width: 150px;
+}
+
+.feedpage button:hover {
+	background-position: right center;
+}
+
+.feedpage button:active {
+	box-shadow: 0px 1px 2px rgb(160, 160, 160);
+	transform: translateY(2px);
+	transition: 0.1s;
+}
+
+.feedpage #posts-container {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	border-left: 1px solid rgb(156, 156, 156);
+	border-radius: 0 0 6px 6px;
+	border-right: 1px solid rgb(156, 156, 156);
+	margin: 0 10px;
+	max-height: 70vh;
+	min-height: 70vh;
+	overflow-y: auto;
+}
+
+.feedpage .visiblefeedmsg {
+	color: rgb(110, 110, 110);
+	margin: 40px;
+	text-align: center;
+}
+
+.feedpage .hiddenfeedmsg {
+	height: 0;
+	visibility: hidden;
+}
+
+.feedpage .newpost {
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid rgb(177, 177, 177);
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+}
+
+.feedpage .newpost-user {
+	align-items: center;
+	display: flex;
+}
+
+.feedpage .newpost-pic img {
+	height: 50px;
+	margin: 0 6px;
+	width: 50px;
+}
+
+.feedpage .newpost-userinfo {
+	align-items: center;
+	display: flex;
+}
+
+.feedpage .newpost-username-text {
+	color: rgb(94, 94, 94);
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	padding: 4px 0;
+}
+
+.feedpage .newpost-pronouns-text {
+	color: rgb(151, 151, 151);
+	font-weight: 500;
+	margin: 0 10px;
+	padding: 4px 0;
+}
+
+.feedpage .newpost-bio {
+	max-width: 800px;
+	padding: 10px 0;
+}
+
+.feedpage .newpost-bio-text {
+	color: rgb(151, 151, 151);
+	font-size: 16px;
+	overflow-wrap: break-word;
+	padding: 5px 0;
+}
+
+.feedpage .newpost-namepronouns {
+	display: flex;
+	font-weight: 100;
+}
+
+.feedpage .newpost-content p {
+	margin-left: 84px;
+	margin-top: 10px;
+	overflow-wrap: break-word;
+}
+
+.feedpage .newpost-date p {
+	color: rgb(110, 110, 110);
+	font-size: 1rem;
+	margin-top: 20px;
+}

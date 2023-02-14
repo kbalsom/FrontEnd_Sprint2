@@ -1,0 +1,231 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap");
+
+.loginfeedpage {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: 100%;
+}
+
+.loginfeedpage ::-webkit-scrollbar {
+	border-radius: 0 10px 10px 0;
+	border: 5px solid white;
+	height: 10px;
+	width: 8px;
+}
+
+.loginfeedpage ::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	background: #c2c9d2;
+	border-radius: 10px;
+}
+
+.loginfeedpage .feed {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-self: flex-end;
+	max-width: 75vw;
+	width: 100%;
+}
+
+.loginfeedpage #user {
+	border-radius: 6px;
+	border: 1px solid rgb(156, 156, 156);
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	margin: 10px;
+	max-height: 120px;
+	min-height: 120px;
+	overflow-y: auto;
+}
+
+.loginfeedpage #userpicture {
+	align-items: center;
+	display: flex;
+	margin: 0px 30px;
+}
+
+.loginfeedpage #userinfo {
+	align-items: center;
+	display: flex;
+}
+
+.loginfeedpage #newpost-container {
+	border-radius: 6px 6px 0 0;
+	border: 1px solid rgb(156, 156, 156);
+	margin: 0 10px;
+	overflow-y: auto;
+}
+
+.loginfeedpage .gradient-border {
+	-webkit-border-radius: 6px;
+	align-items: center;
+	background: -webkit-linear-gradient(top left, #63d9a0 0, #9e0de7 95%);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: center;
+	margin: 10px;
+}
+
+.loginfeedpage .form-container {
+	align-items: center;
+	background-color: white;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	height: 94px;
+	justify-content: center;
+	position: relative;
+	width: 99.6%;
+}
+
+.loginfeedpage form {
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 5px solid white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.loginfeedpage textarea {
+	border: none;
+	height: 100%;
+	padding: 7px 180px 7px 7px;
+	resize: none;
+	width: 100%;
+}
+
+.loginfeedpage textarea:focus-visible {
+	outline: none;
+}
+
+.loginfeedpage button {
+	-webkit-transition: 0.5s;
+	background-image: linear-gradient(
+		to right,
+		#63d9a0 0%,
+		#9e0de7 50%,
+		#63d9a0 100%
+	);
+	align-self: flex-end;
+	background-size: 200% auto;
+	border-radius: 5px;
+	border: none;
+	bottom: 5px;
+	box-shadow: 0px 3px 4px rgb(165, 165, 165);
+	display: block;
+	height: 32px;
+	margin: 10px;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	transition: 0.5s;
+	width: 150px;
+}
+
+.loginfeedpage button:hover {
+	background-position: right center;
+}
+
+.loginfeedpage button:active {
+	box-shadow: 0px 1px 2px rgb(160, 160, 160);
+	transform: translateY(2px);
+	transition: 0.1s;
+}
+
+.loginfeedpage #posts-container {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	border-left: 1px solid rgb(156, 156, 156);
+	border-radius: 0 0 6px 6px;
+	border-right: 1px solid rgb(156, 156, 156);
+	margin: 0 10px;
+	max-height: 70vh;
+	min-height: 70vh;
+	overflow-y: auto;
+}
+
+.loginfeedpage .visiblefeedmsg {
+	color: rgb(110, 110, 110);
+	margin: 40px;
+	text-align: center;
+}
+
+.loginfeedpage .hiddenfeedmsg {
+	height: 0;
+	visibility: hidden;
+}
+
+.loginfeedpage .newpost {
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid rgb(177, 177, 177);
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+}
+
+.loginfeedpage .newpost-user {
+	align-items: center;
+	display: flex;
+}
+
+.loginfeedpage .newpost-pic img {
+	height: 50px;
+	margin: 0 6px;
+	width: 50px;
+}
+
+.loginfeedpage .newpost-userinfo {
+	align-items: center;
+	display: flex;
+}
+
+.loginfeedpage .newpost-username-text {
+	color: rgb(94, 94, 94);
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+	padding: 4px 0;
+}
+
+.loginfeedpage .newpost-pronouns-text {
+	color: rgb(151, 151, 151);
+	font-weight: 500;
+	margin: 0 10px;
+	padding: 4px 0;
+}
+
+.loginfeedpage .newpost-bio {
+	max-width: 800px;
+	padding: 10px 0;
+}
+
+.loginfeedpage .newpost-bio-text {
+	color: rgb(151, 151, 151);
+	font-size: 16px;
+	overflow-wrap: break-word;
+	padding: 5px 0;
+}
+
+.loginfeedpage .newpost-namepronouns {
+	display: flex;
+	font-weight: 100;
+}
+
+.loginfeedpage .newpost-content p {
+	margin-left: 84px;
+	margin-top: 10px;
+	overflow-wrap: break-word;
+}
+
+.loginfeedpage .newpost-date p {
+	color: rgb(110, 110, 110);
+	font-size: 1rem;
+	margin-top: 20px;
+}
